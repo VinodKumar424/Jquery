@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Jquery</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='testimonial.css'>
+    <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href="css/owl.carousel.css">
+    <link rel='stylesheet' href="css/owl.theme.default.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <div class="menu-icon">
+                    <i class="fa fa-bars fa-2x"></i>
+                </div>
+                <div class="logo">
+                    LOGO
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="content">
+            <p>
+                jQuery is a JavaScript library that allows web developers to 
+                add extra functionality to their websites. It is open source and
+                 provided for free under the MIT license. ... jQuery can also 
+                 work with Ajax code and scripting languages, 
+                such as PHP and ASP to access data from a database
+            </p>
+            <p>
+                jQuery is a JavaScript library that allows web developers to 
+                add extra functionality to their websites. It is open source and
+                 provided for free under the MIT license. ... jQuery can also 
+                 work with Ajax code and scripting languages, 
+                such as PHP and ASP to access data from a database
+            </p>
+            <p>
+                jQuery is a JavaScript library that allows web developers to 
+                add extra functionality to their websites. It is open source and
+                 provided for free under the MIT license. ... jQuery can also 
+                 work with Ajax code and scripting languages, 
+                such as PHP and ASP to access data from a database
+            </p>
+        </div>
+    </div>
+
+
+
+
+    <div style="background-color: aquamarine;" class="wrapper">
+        <div class="testimonial-carousel section-padding owl-carousel">
+
+            <div class="single-testi">
+                <div class="img-area">
+                    <img src="images/4.jpg" alt="">
+                </div>
+                <div class="img-text">
+                    <h2>John Doe</h2>
+                    <h3>Software Designer</h3>
+                    <p>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </p>
+                    <hr>
+                    <p>Very Professional and Honest.Highly Recommented</p>
+                </div>
+            </div>
+
+            <div class="single-testi">
+                <div class="img-area">
+                    <img src="images/4.jpg" alt="">
+                </div>
+                <div class="img-text">
+                    <h2>John Doe</h2>
+                    <h3>Software Designer</h3>
+                    <p>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </p>
+                    <hr>
+                    <p>Very Professional and Honest.Highly Recommented</p>
+                </div>
+            </div>
+
+            <div class="single-testi">
+                <div class="img-area">
+                    <img src="images/4.jpg" alt="">
+                </div>
+                <div class="img-text">
+                    <h2>John Doe</h2>
+                    <h3>Software Designer</h3>
+                    <p>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </p>
+                    <hr>
+                    <p>Very Professional and Honest.Highly Recommented</p>
+                </div>
+            </div>
+
+            <div class="single-testi">
+                <div class="img-area">
+                    <img src="images/4.jpg" alt="">
+                </div>
+                <div class="img-text">
+                    <h2>John Doe</h2>
+                    <h3>Software Designer</h3>
+                    <p>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </p>
+                    <hr>
+                    <p>Very Professional and Honest.Highly Recommented</p>
+                </div>
+            </div>
+
+            <div class="single-testi">
+                <div class="img-area">
+                    <img src="images/4.jpg" alt="">
+                </div>
+                <div class="img-text">
+                    <h2>John Doe</h2>
+                    <h3>Software Designer</h3>
+                    <p>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </p>
+                    <hr>
+                    <p>Very Professional and Honest.Highly Recommented</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+
+    <script type="text/javascript">
+    
+    $(document).ready(function(){
+        $(".menu-icon").on("click",function(){
+            $("nav ul").toggleClass("showing");
+        });
+    });
+
+
+    $(window).on("scroll",function(){
+        if($(window).scrollTop()){
+            $('nav').addClass('black');
+        }
+        else{
+            $('nav').removeClass('black');
+        }
+    })
+    </script>
+
+
+
+<script src="js/jquery-3.2.1.min.js"></script>
+   <script src="js/owl.carousel.js"></script>
+
+   <script>
+       $('.testimonial-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    autoplay:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:3
+        }
+    }
+})
+   </script>
+
+</body>
+</html>

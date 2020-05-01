@@ -1,0 +1,158 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+    /* background-image: url(images/nature.webp); */
+    -webkit-background-size:cover;
+    background-size: cover;
+    background-position: center center;
+    /* height: 100vh; */
+    /* overflow: hidden; */
+}
+.wrapper{
+    background: #000;
+    text-align: center;
+    width: 960px;
+    margin: 20px auto;
+}
+.nav-area,
+.nav-area ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-area li{
+    position: relative;
+}
+.nav-area a{
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.nav-area a:hover{
+    background: deeppink;
+}
+.nav-area > li{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: -4px;
+}
+.nav-area > li:first-child{
+    margin-left: 0;
+}
+.nav-area > li > ul{
+    text-align: left;
+    display: none;
+    background: #000;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 240px;
+    z-index: 99999;
+}
+.nav-area > li > ul > li > ul{
+    text-align: left;
+    display: none;
+    background: #000;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    z-index: 999999;
+}
+
+
+header{
+    width: 100%;
+    height: 100vh;
+    /* background: url(bg1.jpg) no-repeat 50% 50%; */
+    background-size: cover;
+
+}
+.content {
+    width: 90%;
+    margin: 4em auto;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+}
+.logo {
+    position: fixed;
+    float: left;
+    margin: 16px 36px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+}
+nav ul{
+    list-style: none;
+    background: rgba(0,0,0,0);
+    overflow: hidden;
+    color: #fff;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    transition: 1s;
+
+    
+}
+
+nav.black ul {
+    background: #000;
+}
+nav ul li {
+    display: inline-block;
+    padding: 20px;
+}
+ nav ul li a {
+     text-decoration: none;
+     color: #fff;
+     font-size: 20px;
+ }
+
+
+ .menu-icon {
+     width: 100%;
+     background: #000;
+     text-align: right;
+     box-sizing: border-box;
+     padding: 15px 24px;
+     cursor: pointer;
+     color: #fff;
+     display: none;
+ }
+
+ @media(max-width:580px){
+     .logo{
+         position: fixed;
+         top: 0;
+         margin-top: 16px;
+     }
+     nav ul {
+         max-height: 0px;
+         background: #000;
+     } 
+     nav.black ul {
+         background: #000;
+     }
+     .showing {
+         max-height: 20em;
+     }
+     nav ul li {
+         box-sizing: border-box;
+         width: 100%;
+         padding: 24px 0;
+         text-align: center;
+     }
+     .menu-icon{
+         display: block;
+     }
+ }
